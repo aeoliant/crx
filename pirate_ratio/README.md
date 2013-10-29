@@ -1,5 +1,7 @@
 #Pirate Ratio
 
+Adds a seeder-to-leecher ratio column for pirate bay.
+
 #####Installation
 
 1. [Download the extension](https://github.com/aeoliant/crx/raw/master/pirate_ratio/pirate_ratio.crx). It will say something like "can't install extensions this way"
