@@ -6,7 +6,7 @@ var round = function (num) {
   return (Math.round((num * Math.pow(10, decimals)) + (sign * 0.001)) / Math.pow(10, decimals)).toFixed(decimals);
 }
 
-$(".header").append("<th><abbr title='Ratio'><a href='#' title='Can't order by ratio yet!'>RT</a></abbr></th>");
+$(".header").append("<th><abbr title='Ratio'><a href='#' title='Can\'t order by ratio yet!'>RT</a></abbr></th>");
 var seeders = [];
 var leechers = [];
 $("td:nth-child(3)").each(function () {
