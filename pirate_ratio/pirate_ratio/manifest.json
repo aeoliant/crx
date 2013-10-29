@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Pirate Ratio",
+  "version": "0.1",
+  "description": "Shows the seeder/leecher ratio",
+  "content_scripts": 
+  [
+    {
+      "matches": ["http://thepiratebay.sx/search/*"],
+      "js": ["jquery-1.9.1.min.js", "content_script.js"]
+    }
+  ],
+  "web_accessible_resources": 
+  [
+    "jquery-1.9.1.min.js",
+    "content_script.js"
+  ]
+}
