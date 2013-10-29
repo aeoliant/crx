@@ -9,18 +9,18 @@ var round = function (num) {
 $(".header").append("<th><abbr title='Ratio'><a href='#' title='Can't order by ratio yet!'>RT</a></abbr></th>");
 var seeders = [];
 var leechers = [];
-$("td:nth-child(3)").each(function(){
+$("td:nth-child(3)").each(function () {
   var seederCell = $(this);
   seeders.push(parseInt(seederCell.html()));
 });
-$("td:nth-child(4)").each(function(){
+$("td:nth-child(4)").each(function () {
   var leecherCell = $(this);
   leechers.push(parseInt(leecherCell.html()));
 });
-$("tr").not(".header").append(function(index, html) {
+$("tr").not(".header").append(function (index, html) {
   var row = $(this);
   var numSeeders = seeders[index];
   var numLeechers = leechers[index];
-  var ratio = round(numSeeders/numLeechers);
+  var ratio = round(numSeeders / numLeechers);
   return "<td align='right'>" + ratio + "</td>";
 });
