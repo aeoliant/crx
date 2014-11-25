@@ -6,7 +6,7 @@
   "content_scripts": 
   [
     {
-      "matches": ["http://thepiratebay.sx/search/*"],
+      "matches": ["http://thepiratebay.se/search/*"],
       "js": ["jquery-1.9.1.min.js", "content_script.js"]
     }
   ],
