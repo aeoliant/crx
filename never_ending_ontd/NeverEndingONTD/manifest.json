@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Never Ending ONTD",
+  "version": "0.1",
+  "description": "Automatically loads the next page when you get near the end",
+  "content_scripts": 
+  [
+    {
+      "matches": ["http://ohnotheydidnt.livejournal.com/*"],
+      "js": ["jquery-1.9.1.min.js", "content_script.js"]
+    }
+  ]
+}
